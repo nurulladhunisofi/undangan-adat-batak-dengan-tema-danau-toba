@@ -1,0 +1,329 @@
+/* Responsive Adaptation & Media Queries */
+
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .side-navigation {
+    display: none; /* Hide desktop dots on tablet/mobile */
+  }
+
+  .culture-features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .couple-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .couple-center-divider {
+    transform: rotate(90deg);
+  }
+
+  .vertical-gold-line {
+    height: 40px;
+  }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  html, body, #app {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  .wedding-section {
+    min-height: auto;
+    padding: 60px 14px;
+    justify-content: flex-start;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  #section-opening {
+    min-height: 100vh;
+    justify-content: center;
+  }
+
+  .glass-card {
+    padding: 22px 14px;
+    border-radius: 14px;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  .section-title {
+    font-size: 1.85rem;
+  }
+
+  .opening-title {
+    font-size: clamp(2.2rem, 8vw, 3rem);
+    word-break: break-word;
+  }
+
+  .culture-features-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .gallery-card {
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .gallery-img-container {
+    height: 150px;
+  }
+
+  .location-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* Story Timeline Mobile Fix */
+  .timeline-wrapper {
+    padding: 10px 0;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .timeline-item,
+  .timeline-item.left,
+  .timeline-item.right {
+    left: 0 !important;
+    right: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 36px !important;
+    padding-right: 0 !important;
+    text-align: left !important;
+    margin-bottom: 24px;
+    box-sizing: border-box;
+  }
+
+  .timeline-card {
+    padding: 18px 14px;
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  .timeline-line {
+    left: 12px !important;
+    transform: none !important;
+  }
+
+  .timeline-node {
+    left: 3px !important;
+    right: auto !important;
+    top: 16px;
+    width: 18px;
+    height: 18px;
+  }
+
+  /* Responsive Countdown Grid (Fits on all narrow mobile screens) */
+  .countdown-timer-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .timer-box {
+    min-width: 0;
+    flex: 1;
+    max-width: 68px;
+    padding: 10px 4px;
+    box-sizing: border-box;
+  }
+
+  .timer-num {
+    font-size: 1.6rem;
+  }
+
+  .timer-label {
+    font-size: 0.55rem;
+    letter-spacing: 0.1em;
+  }
+
+  .timer-colon {
+    font-size: 1.1rem;
+    padding: 0 1px;
+  }
+
+  .arabic-quote {
+    font-size: 1.2rem;
+    line-height: 2.0;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .quote-translation {
+    font-size: 1.0rem;
+    line-height: 1.7;
+  }
+
+  .music-toggle-wrapper {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .music-btn {
+    width: 44px;
+    height: 44px;
+    font-size: 1.1rem;
+  }
+
+  .couple-avatar-wrapper {
+    width: 140px;
+    height: 190px;
+  }
+
+  .bank-acc-num {
+    font-size: clamp(1.2rem, 5.5vw, 1.5rem);
+    word-break: break-all;
+  }
+
+  /* Compact & Centered Lightbox for Mobile */
+  .lightbox-modal {
+    padding: 12px;
+    background: rgba(5, 15, 20, 0.88);
+  }
+
+  .lightbox-dialog {
+    padding: 14px 12px;
+    width: min(92vw, 400px);
+    max-height: 80vh;
+    border-radius: 14px;
+    margin: auto;
+    box-sizing: border-box;
+  }
+
+  .lightbox-header {
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+  }
+
+  .lightbox-counter {
+    font-size: 0.75rem;
+  }
+
+  .lightbox-close-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 0.95rem;
+  }
+
+  .lightbox-body {
+    gap: 6px;
+    margin-bottom: 10px;
+  }
+
+  .lightbox-nav-btn {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+    font-size: 0.95rem;
+  }
+
+  .lightbox-img-wrapper {
+    max-height: 38vh;
+    width: 100%;
+  }
+
+  #lightbox-img {
+    max-height: 38vh;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .lightbox-footer {
+    padding-top: 4px;
+  }
+
+  .lightbox-title {
+    font-size: 1.1rem;
+    margin-bottom: 3px;
+  }
+
+  .lightbox-desc {
+    font-size: 0.78rem;
+    line-height: 1.4;
+    max-height: 60px;
+    overflow-y: auto;
+  }
+}
+
+/* Extra Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .wedding-section {
+    padding: 50px 12px;
+  }
+
+  .glass-card {
+    padding: 18px 12px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .gallery-img-container {
+    height: 135px;
+  }
+
+  .timeline-item,
+  .timeline-item.left,
+  .timeline-item.right {
+    padding-left: 32px !important;
+  }
+
+  .timeline-line {
+    left: 10px !important;
+  }
+
+  .timeline-node {
+    left: 1px !important;
+  }
+
+  .timer-box {
+    padding: 8px 2px;
+  }
+
+  .timer-num {
+    font-size: 1.4rem;
+  }
+
+  .timer-colon {
+    display: none;
+  }
+}
+
+/* Accessibility: Prefers Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

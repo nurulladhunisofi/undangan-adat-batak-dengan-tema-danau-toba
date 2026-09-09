@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <meta name="theme-color" content="#0b2028" />
+  <title>Janji Suci di Tepian Danau Toba — Pernikahan Adat Batak &amp; Islam</title>
+  <meta name="description" content="Undangan Pernikahan Digital Immersive Adat Batak Toba &amp; Islam dengan latar Danau Toba" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💍</text></svg>" />
+</head>
+<body>
+  <!-- Preloader Screen -->
+  <div id="preloader" class="preloader">
+    <div class="preloader-spinner"></div>
+    <p class="preloader-title">MEMUAT CERITA KAMI...</p>
+    <p id="preloader-percent" class="preloader-progress">0%</p>
+  </div>
+
+  <!-- Background Three.js Fullscreen WebGL Canvas -->
+  <canvas id="webgl-canvas"></canvas>
+
+  <!-- Side Navigation Dots (Desktop) -->
+  <nav class="side-navigation" aria-label="Navigasi Cerita">
+    <a href="#section-opening" class="nav-dot active" aria-label="Pembuka"><span class="dot-circle"></span><span class="dot-label">01 PEMBUKA</span></a>
+    <a href="#section-quote" class="nav-dot" aria-label="Ayat Suci"><span class="dot-circle"></span><span class="dot-label">02 AYAT</span></a>
+    <a href="#section-couple" class="nav-dot" aria-label="Mempelai"><span class="dot-circle"></span><span class="dot-label">03 MEMPELAI</span></a>
+    <a href="#section-culture" class="nav-dot" aria-label="Budaya"><span class="dot-circle"></span><span class="dot-label">04 BUDAYA</span></a>
+    <a href="#section-story" class="nav-dot" aria-label="Kisah"><span class="dot-circle"></span><span class="dot-label">05 KISAH</span></a>
+    <a href="#section-akad" class="nav-dot" aria-label="Akad Nikah"><span class="dot-circle"></span><span class="dot-label">06 AKAD</span></a>
+    <a href="#section-reception" class="nav-dot" aria-label="Resepsi"><span class="dot-circle"></span><span class="dot-label">07 RESEPSI</span></a>
+    <a href="#section-cultural-journey" class="nav-dot" aria-label="Perjalanan"><span class="dot-circle"></span><span class="dot-label">08 PERJALANAN</span></a>
+    <a href="#section-gallery" class="nav-dot" aria-label="Galeri"><span class="dot-circle"></span><span class="dot-label">09 GALERI</span></a>
+    <a href="#section-countdown" class="nav-dot" aria-label="Hitung Mundur"><span class="dot-circle"></span><span class="dot-label">10 HITUNG MUNDUR</span></a>
+    <a href="#section-location" class="nav-dot" aria-label="Lokasi"><span class="dot-circle"></span><span class="dot-label">11 LOKASI</span></a>
+    <a href="#section-rsvp" class="nav-dot" aria-label="RSVP"><span class="dot-circle"></span><span class="dot-label">12 RSVP</span></a>
+    <a href="#section-gift" class="nav-dot" aria-label="Tanda Kasih"><span class="dot-circle"></span><span class="dot-label">13 TANDA KASIH</span></a>
+    <a href="#section-closing" class="nav-dot" aria-label="Penutup"><span class="dot-circle"></span><span class="dot-label">14 PENUTUP</span></a>
+  </nav>
+
+  <!-- Floating Music Toggle Button -->
+  <div class="music-toggle-wrapper">
+    <button id="music-toggle-btn" class="music-btn" aria-label="Putar Musik" title="Putar Musik">
+      <span class="music-icon">♫</span>
+    </button>
+  </div>
+
+  <!-- Main DOM Sections App Container -->
+  <main id="app">
+    <section id="section-opening" class="wedding-section"></section>
+    <section id="section-quote" class="wedding-section"></section>
+    <section id="section-couple" class="wedding-section"></section>
+    <section id="section-culture" class="wedding-section"></section>
+    <section id="section-story" class="wedding-section"></section>
+    <section id="section-akad" class="wedding-section"></section>
+    <section id="section-reception" class="wedding-section"></section>
+    <section id="section-cultural-journey" class="wedding-section"></section>
+    <section id="section-gallery" class="wedding-section"></section>
+    <section id="section-countdown" class="wedding-section"></section>
+    <section id="section-location" class="wedding-section"></section>
+    <section id="section-rsvp" class="wedding-section"></section>
+    <section id="section-gift" class="wedding-section"></section>
+    <section id="section-closing" class="wedding-section"></section>
+  </main>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
